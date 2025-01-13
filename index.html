@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+    <script src="https://kit.fontawesome.com/08b1c2a6bb.js" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+    <title>AmrutamVatika Clone</title>
+</head>
+
+<body>
+    <header class="font-green header">
+        <div class="header-main">
+            <div>📞 +91 ********</div>
+            <img class="brand"
+                src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/only_text_Amrutam_Logo_in_Green-09_5580cc82-5bb1-43d6-9ed8-f5d51c04d1f8.png?v=1658129548&width=200%201x"
+                alt="brand">
+            <div class="header-icons">
+
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-user" id="userIcon" onClick="showForm()"></i>
+                <div class="form-container" id="formContainer">
+                    <form>
+                        <label for="emailInput">Email:</label>
+                        <input type="text" id="emailInput" class="input-field">
+                        <br>
+                        <label for="passwordInput">Password:</label>
+                        <input type="password" id="passwordInput" class="input-field">
+                        <br>
+                        <!-- <button type="button" id="loginButton" class="form-button" onclick="login()">Login</button> -->
+                        <button type="button" id="registerButton" class="form-button"
+                            onclick="register()">Register</button>
+                    </form>
+                </div>
+                <div id="successPopup" class="custom-popup">
+                    <div class="popup-content">
+                        <span class="close" id="closePopup">&times;</span>
+                        <p>Registration successful!</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-cart-shopping "></i>
+                <div id="cartModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Your Cart</h2>
+                        <ul id="cartItemList"></ul>
+                    </div>
+                </div>
+                <span class="cart-length">0</span>
+
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-inner">
+                <li>
+                    <a href="#">
+                        Hair<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        Skin<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#health">
+                        Health<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#lifestyle">
+                        Lifestyle<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#community">
+                        Community<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#about-us">
+                        About Us<i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
